@@ -1,15 +1,27 @@
 ---
-layout: post
-title: Welcome to RealAI Check
-date: 2026-01-01
+layout: page
+title: About
 ---
 
-# Our First Post
+RealAI Check is an independent fact-checking initiative launched on January 1, 2026.
 
-RealAI Check is live as of January 1, 2026!
+### Our Mission
+We are dedicated to combating AI-generated misinformation in the age of deepfakes, synthetic images, and generative content. Our goal is to provide clear, evidence-based verifications of viral claims spreading on social media.
 
-This independent fact-checking site focuses on debunking AI-generated misinformation, deepfakes, synthetic images, and viral claims on social media.
+### What We Do
+- Focus exclusively on AI-related misinformation and manipulation
+- Monitor high-engagement content across platforms like X, TikTok, Instagram, and more
+- Use transparent, reproducible methods with links to primary sources
+- Rate claims clearly and correct errors promptly
 
-More evidence-based checks coming soon. Stay tuned!
+### Who We Are
+Run by independent volunteer(s) passionate about digital truth and media literacy.
 
-In the meantime, explore our [Methodology](/methodology) and [submit a claim](/submit) if you spot something suspicious.
+No political affiliation. No external funding — fully bootstrapped to maintain complete independence.
+
+### Get Involved
+- [Submit a suspicious claim](/submit)
+- Read our [Methodology](/methodology)
+- Share our checks to help spread accurate information
+
+Thank you for supporting RealAI Check. Together, we can keep the internet grounded in reality.
