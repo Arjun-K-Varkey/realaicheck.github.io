@@ -1,0 +1,31 @@
+/* Tech-trustworthy blues & grays */
+body {
+  background-color: #f8f9fa;
+  color: #333333;
+}
+
+a {
+  color: #0066cc;
+}
+
+a:hover {
+  color: #004499;
+}
+
+.navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.footer {
+  background-color: #f1f1f1;
+  color: #555555;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #2c3e50;
+}
+
+/* Larger verdict badges later for posts */
+.verdict-true { color: green; font-weight: bold; }
+.verdict-false { color: red; font-weight: bold; }
