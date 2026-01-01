@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-# About RealAI Check
+## About RealAI Check
 
 Launched in 2026, RealAI Check is an independent project dedicated to combating AI-generated misinformation.
 
