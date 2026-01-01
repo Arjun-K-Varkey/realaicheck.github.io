@@ -3,18 +3,31 @@ layout: page
 title: Methodology
 ---
 
-# Our Methodology
+RealAI Check follows international standards (inspired by the International Fact-Checking Network principles).
 
-RealAI Check follows international standards (inspired by IFCN principles):
+### Our Commitments
+- **Non-partisanship**: We verify claims from all sides equally, without favoritism.
+- **Transparency**: Every verdict includes links to primary sources and clear reasoning.
+- **Corrections policy**: If an error is found, we update the check promptly with a visible correction note.
 
-- **Non-partisanship**: We check claims from all sides equally.
-- **Transparency**: Every verdict cites primary sources with links.
-- **Verification process**:
-  1. Detect viral claims via social media monitoring.
-  2. Research using reliable tools (reverse image search, metadata analysis, official statements).
-  3. Rate: True / Mostly True / Misleading / False / Unverifiable.
-  4. Publish with full explanation and evidence.
-- **Corrections**: Errors? We update promptly with notes.
-- **AI focus**: Special tools for detecting deepfakes/synthetics (e.g., frame analysis, watermark checks).
+### Verification Process
+1. **Detection**: Monitor social media for viral AI-related claims (deepfakes, synthetic images, misleading generated content).
+2. **Research**: Use reliable tools including reverse image search, metadata analysis, geolocation, frame-by-frame video checks, AI detection software, and official statements.
+3. **Rating**: Assign one of the following verdicts:
+   - True
+   - Mostly True
+   - Misleading
+   - False
+   - Unverifiable
+4. **Publication**: Full explanation with embedded evidence and sources.
 
-Questions? Contact us.
+### AI-Specific Focus
+We specialize in generative AI misinformation and employ specialized techniques such as:
+- Deepfake video frame analysis
+- Synthetic image watermark and artifact detection
+- Audio manipulation checks
+- Prompt/reverse-engineering clues in generated text
+
+Questions or suggestions? Feel free to contact us.
+
+Thank you for trusting RealAI Check.
