@@ -5,6 +5,7 @@ author: Anonymous (or leave blank for neutrality)
 round-avatar: false  # For square logo if preferred
 site-css:
   - "/assets/css/custom.css"
+footer-extra: "/_includes/footer-custom.html"
 rss: true  # Enable RSS feed link in footer
 
 navbar-links:
