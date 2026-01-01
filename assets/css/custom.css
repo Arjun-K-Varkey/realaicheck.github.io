@@ -29,3 +29,8 @@ h1, h2, h3, h4, h5, h6 {
 /* Larger verdict badges later for posts */
 .verdict-true { color: green; font-weight: bold; }
 .verdict-false { color: red; font-weight: bold; }
+
+body { background: #f9f9f9; }
+.navbar { background: white; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+a { color: #007bff; }
+h1, h2 { color: #343a40; }
