@@ -1,12 +1,19 @@
 title: RealAI Check
 description: Independent fact-checking of AI-generated misinformation, deepfakes, and viral synthetic content on social media.
-author: Anonymous (or leave blank for neutrality)
+
+# Remove or leave completely blank – no "Anonymous" text
+author:
+
+# Remove the avatar line entirely (or keep commented)
 #avatar: "/assets/img/logo.png"
-round-avatar: false  # For square logo if preferred
+round-avatar: false
+
 site-css:
   - "/assets/css/custom.css"
-footer-extra: "/_includes/footer-custom.html"
-rss: true  # Enable RSS feed link in footer
+
+footer-extra: /_includes/footer-custom.html   # Note: no quotes needed
+
+rss: true
 
 navbar-links:
   Home: ""
@@ -15,15 +22,14 @@ navbar-links:
   Methodology: "methodology"
   About: "about"
 
-# Social links in footer (keep minimal for credibility)
 social-network-links:
-  github: Arjun-K-Varkey  # Or create a site-specific account
-  email: yourfactcheck@email.com
+  github: Arjun-K-Varkey
+  email: realaicheck.contact@gmail.com   # Use a real email
   rss: true
 
-# Other useful options
-post_search: true  # Enables search bar
-edit_page_button: true  # "Edit on GitHub" button
-share-links-active:  # Share buttons on posts
+post_search: true
+edit_page_button: false   # CHANGE THIS TO false – removes "Edit page"
+
+share-links-active:
   twitter: true
   linkedin: true
