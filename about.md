@@ -20,8 +20,8 @@ Run by independent volunteer(s) passionate about digital truth and media literac
 No political affiliation. No external funding — fully bootstrapped to maintain complete independence.
 
 ### Get Involved
-- [Submit a suspicious claim](/submit)
-- Read our [Methodology](/methodology)
+- [Submit a suspicious claim](/realaicheck.github.io/submit)
+- Read our [Methodology](/realaicheck.github.io/methodology)
 - Share our checks to help spread accurate information
 
 Thank you for supporting RealAI Check. Together, we can keep the internet grounded in reality.
