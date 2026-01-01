@@ -5,11 +5,10 @@ avatar: "/assets/img/your-logo.png"  # Add a custom logo/image (upload to assets
 round-avatar: true
 rss: true  # Enable RSS feed link in footer
 
-# Navbar links (replace defaults)
 navbar-links:
   Home: ""
-  Latest Checks: "blog"  # Points to your fact-check posts
-  Submit a Claim: "submit"  # Create submit.md page
+  Latest Checks: "blog"  # Links to your fact-check posts
+  Submit a Claim: "submit"
   Methodology: "methodology"
   About: "about"
 
