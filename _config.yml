@@ -9,7 +9,7 @@ rss: true  # Enable RSS feed link in footer
 
 navbar-links:
   Home: ""
-  Latest Checks: "blog"  # Links to your fact-check posts
+  Latest Checks: "blog"
   Submit a Claim: "submit"
   Methodology: "methodology"
   About: "about"
