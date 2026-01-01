@@ -1,8 +1,8 @@
 title: RealAI Check
 description: Independent fact-checking of AI-generated misinformation, deepfakes, and viral synthetic content on social media.
 author: Anonymous (or leave blank for neutrality)
-avatar: "/assets/img/your-logo.png"  # Add a custom logo/image (upload to assets/img)
-round-avatar: true
+avatar: "/assets/img/logo.png"
+round-avatar: false  # For square logo if preferred
 site-css:
   - "/assets/css/custom.css"
 rss: true  # Enable RSS feed link in footer
