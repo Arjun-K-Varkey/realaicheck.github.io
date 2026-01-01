@@ -3,6 +3,8 @@ description: Independent fact-checking of AI-generated misinformation, deepfakes
 author: Anonymous (or leave blank for neutrality)
 avatar: "/assets/img/your-logo.png"  # Add a custom logo/image (upload to assets/img)
 round-avatar: true
+site-css:
+  - "/assets/css/custom.css"
 rss: true  # Enable RSS feed link in footer
 
 navbar-links:
