@@ -28,6 +28,6 @@ Your submissions help us protect the truth in the AI era. All tips reviewed tran
 
 <p><small>* Required field. Submissions are anonymous unless you provide contact info.</small></p>
 
-<p>Alternative: Email tips directly to <a href="mailto:your-email@example.com">your-email@example.com</a> (replace with a real address).</p>
+<p>Alternative: Email tips directly to <a href="mailto:your-email@example.com">realaicheck.contact@gmail.com</a>.</p>
 
 Thank you for helping combat AI misinformation!
