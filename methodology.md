@@ -15,6 +15,33 @@ RealAI Check is designed to help you navigate the complexities of AI-generated c
 
 ### How the Tool Works
 
+graph TD
+    A[User Submits URL] --> B{Frontend (submit.md)};
+    B --> C[API Request];
+    C --> D[Backend Endpoint (e.g., Render)];
+    D --> E{Content Fetching};
+    E --> F{AI Detection (Hugging Face)};
+    F --> G{Claim Extraction (NLP)};
+    G --> H{Live Cross-Referencing (DuckDuckGo)};
+    H --> I{Verdict Generation};
+    I --> J[Response to Frontend];
+    J --> K{Display Results};
+    K --> L[User Sees Analysis];
+
+    subgraph Backend Processing
+        E
+        F
+        G
+        H
+        I
+    end
+
+    subgraph Frontend
+        B
+        K
+        L
+    end
+
 Our system employs a hybrid approach, combining automated analysis with real-time web searches to assess claims. Here's a breakdown:
 
 | Stage                | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                         | Technologies/Logic Used                                                                                                                                  |
