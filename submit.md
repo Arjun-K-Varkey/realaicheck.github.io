@@ -98,13 +98,19 @@ function analyzeUrl() {
   })
   .then(response => {
     if (!response.ok) {
-      throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+      // If the response is not OK, attempt to get error details from backend
+      return response.json().then(errData => {
+        throw new Error(`HTTP ${response.status}: ${errData.detail || response.statusText}`);
+      }).catch(() => {
+        // If response is not JSON or error, throw generic error
+        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+      });
     }
     return response.json();
   })
   .then(data => {
     // Handle response from backend
-    if (data.error) {
+    if (data.error) { // Specific error key from backend
       showError(data.error);
     } else {
       displayResults(data);
@@ -127,6 +133,7 @@ function displayResults(data) {
 
   // Populate verdict and score
   document.getElementById('resultUrl').textContent = data.url || 'Unknown';
+  // Use data.overall_verdict to match the backend's returned key
   document.getElementById('verdictText').textContent = data.overall_verdict || 'Unable to determine';
 
   const aiScore = data.ai_detection?.probability_ai;
@@ -145,8 +152,8 @@ function displayResults(data) {
       li.innerHTML = `
         <strong>Claim ${index + 1}:</strong> ${claim.claim || 'N/A'}<br>
         <small><strong>Verdict:</strong> ${claim.verdict || 'Inconclusive'}</small><br>
-        <small><strong>Supporting sources:</strong> ${(claim.supporting && claim.supporting.length) || 0}</small><br>
-        <small><strong>Challenging sources:</strong> ${(claim.challenging && claim.challenging.length) || 0}</small>
+        <small><strong>Supporting sources:</strong> ${claim.support_count || 0}</small><br>
+        <small><strong>Challenging sources:</strong> ${claim.challenge_count || 0}</small>
       `;
       claimsList.appendChild(li);
     });
@@ -166,12 +173,7 @@ function showError(message) {
 }
 
 function resetForm() {
-  document.getElementById('url').value = '';
-  document.getElementById('description').value = '';
-  document.getElementById('results').style.display = 'none';
-  document.getElementById('errorBox').style.display = 'none';
-  document.getElementById('liveCheckForm').style.display = 'block';
-  document.getElementById('submitBtn').disabled = false;
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  // Reload the page to ensure a clean state
+  location.reload();
 }
 </script>
