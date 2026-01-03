@@ -1,7 +1,8 @@
 fastapi
 uvicorn
 huggingface_hub
-python-dotenvrequests
+python-dotenv
+requests
 beautifulsoup4
 #transformers
 #torch
