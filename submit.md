@@ -55,7 +55,7 @@ Your tips help protect the truth in the AI era. All submissions are reviewed tra
 
 <script>
 // Replace with your actual Render API endpoint
-const API_URL = 'https://realaicheck-api.onrender.com/analyze';
+const API_URL = 'https://realaicheck-github-io.onrender.com/analyze';
 
 function analyzeUrl() {
   const urlInput = document.getElementById('url').value.trim();
