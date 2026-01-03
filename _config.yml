@@ -21,6 +21,7 @@ navbar-links:
   Submit a Claim: "submit"
   Methodology: "methodology"
   About: "about"
+  Support: "https://github.com/sponsors/Arjun-K-Varkey"  # Your sponsors URL
 
 social-network-links:
   github: Arjun-K-Varkey
