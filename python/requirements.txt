@@ -3,7 +3,7 @@ uvicorn
 huggingface_hub
 python-dotenvrequests
 beautifulsoup4
-transformers
-torch
+#transformers
+#torch
 duckduckgo-search
 ddgs
