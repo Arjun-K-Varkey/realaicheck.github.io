@@ -3,7 +3,7 @@ from pydantic import BaseModel
 from typing import Optional
 import uvicorn
 import os
-from misinfo_detector import detect_misinfo  # Assumes misinfo_detector.py in same dir
+from detector.misinfo_detector import detect_misinfo
 
 app = FastAPI(
     title="RealAI Check API",
