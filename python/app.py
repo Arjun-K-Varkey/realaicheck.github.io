@@ -19,7 +19,7 @@ class AnalyzeRequest(BaseModel):
 
 @app.get("/")
 async def root():
-    return {"message": "RealAI Check API is live! 🚀 POST to /analyze with {'url': 'https://example.com'}", "status": "healthy"}
+    return {"message": "RealAI Check API is live! 🚀 POST to /analyze with {'url': 'https://realaicheck-github-io.onrender.com'}", "status": "healthy"}
 
 @app.post("/analyze")
 async def analyze_url(request: AnalyzeRequest = Body(...)):
