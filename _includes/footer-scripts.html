@@ -36,3 +36,54 @@
     <script src="{{ js | relative_url }}"></script>
   {% endfor %}
 {% endif %}
+
+{% comment %}
+  *** ADDED MERMAID INITIALIZATION HERE ***
+  This script runs after all other scripts are loaded.
+  It checks if Mermaid is available and then initializes it.
+{% endcomment %}
+{% if layout.mermaid or page.mermaid %}
+  <script src="{{ '/assets/js/mermaid.min.js' | relative_url }}"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Check if mermaid is loaded
+      if (typeof mermaid === "undefined") {
+        console.warn("[Mermaid] Library not loaded.");
+        return;
+      }
+      
+      // Initialize Mermaid
+      mermaid.initialize({ 
+        startOnLoad: false, // We'll manually trigger init
+        theme: "neutral", // You can change this theme to 'dark', 'forest', or 'neutral'
+        securityLevel: "loose" // Generally safe for locally hosted scripts
+      });
+
+      // Find all potential Mermaid code blocks and render them
+      // This selector targets <pre class="mermaid"> or <div class="mermaid">
+      // Adapt if your markdown processor uses different classes.
+      var mermaidContainers = document.querySelectorAll('.mermaid'); 
+      
+      // If using code blocks directly, you might need to convert them first.
+      // A common approach is to look for <pre><code class="language-mermaid">
+      // and replace it with <div class="mermaid"> that contains the code.
+      document.querySelectorAll("pre code.language-mermaid").forEach(function(node) {
+          var codeText = node.textContent.trim();
+          if (!codeText) return;
+          
+          var container = document.createElement("div");
+          container.className = "mermaid";
+          container.textContent = codeText;
+          
+          if (node.parentElement && node.parentElement.tagName === "PRE") {
+              node.parentElement.parentNode.replaceChild(container, node.parentElement);
+          } else {
+              node.parentNode.replaceChild(container, node);
+          }
+      });
+      
+      // Re-select for any newly created .mermaid divs or existing ones
+      mermaid.init(undefined, document.querySelectorAll(".mermaid"));
+    });
+  </script>
+{% endif %}
