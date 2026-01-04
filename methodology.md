@@ -30,7 +30,7 @@ Our system employs a hybrid approach, combining automated analysis with real-tim
 graph TD
     A[User Submits URL] --> B{Frontend};
     B --> C[API Request];
-    C --> D[Backend Endpoint (e.g., Render)];
+    C --> D[Backend Endpoint $$e.g., Render$$\];
     D --> E{Content Fetching};
     E --> F{AI Detection (Hugging Face)};
     F --> G{Claim Extraction (NLP)};
