@@ -1,3 +1,12 @@
+---
+layout: paget
+itle: Example Page with Diagram
+---
+
+## How It Works
+
+This section illustrates a process using a Mermaid diagram.
+
 ```mermaid
 graph TD
     %% Define styles
