@@ -1,3 +1,4 @@
+```mermaid
 graph TD
     %% Define styles
     classDef frontend fill:#f9f,stroke:#333,stroke-width:2px;
@@ -47,3 +48,4 @@ graph TD
         K
         L
     end
+```
