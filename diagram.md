@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Example Page with Diagram
+title: Diagram
 ---
 
 ## How It Works
