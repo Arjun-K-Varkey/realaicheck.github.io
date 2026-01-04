@@ -1,6 +1,6 @@
 ---
-layout: paget
-itle: Example Page with Diagram
+layout: page
+title: Example Page with Diagram
 ---
 
 ## How It Works
