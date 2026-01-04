@@ -26,13 +26,6 @@ Our system employs a hybrid approach, combining automated analysis with real-tim
 | **4. Live Cross-Referencing** | For each extracted claim, the system performs real-time searches using DuckDuckGo. It looks for both supporting evidence (confirmations, true, evidence) and challenging evidence (false, hoax, debunked) from various online sources.                                                                                                                                                                                                                     | `duckduckgo_search` API for real-time search queries.                                                                                                    |
 | **5. Verdict Generation**| Combines the AI generation probability score with the findings from the cross-referencing stage. The "Overall Verdict" is a weighted assessment, considering whether the claim is likely true, false, misleading, or if there's insufficient evidence. This logic is inspired by IFCN rating guidelines. | Weighted logic combining AI probability (`ai_score`) and claim verification results (`support_count`, `challenge_count`).                             |
 
-<div class="collapsible-diagram">
-  <button class="collapsible-toggle" aria-expanded="false" aria-controls="diagram-1">
-    <span class="collapsible-title">System Flow Diagram</span>
-    <span class="collapsible-indicator" aria-hidden="true">▸</span>
-  </button>
-
-  <div class="collapsible-panel" id="diagram-1" role="region" aria-labelledby="toggle-diagram-1" hidden>
     ```mermaid
     graph TD
         %% Define styles
@@ -84,9 +77,6 @@ Our system employs a hybrid approach, combining automated analysis with real-tim
             L
         end
     ```
-  </div>
-</div>
-
 ---
 
 ### AI-Specific Focus & Technical Transparency
@@ -109,42 +99,3 @@ As a prototype operating on a free-tier server, RealAI Check has certain limitat
 *   **Search Engine Limitations**: The accuracy of our cross-referencing depends on the information available via the search engine (DuckDuckGo) and the quality of the indexed content.
 
 We are committed to improving these aspects as the project develops. Thank you for trusting RealAI Check.
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    // Ensure this script runs only once
-    if (window.collapsibleScriptExecuted) {
-      return;
-    }
-    window.collapsibleScriptExecuted = true;
-
-    document.querySelectorAll('.collapsible-toggle').forEach(function (button) {
-      button.addEventListener('click', function () {
-        var panel = button.nextElementSibling;
-        var isExpanded = button.getAttribute('aria-expanded') === 'true';
-
-        button.setAttribute('aria-expanded', !isExpanded);
-        panel.hidden = isExpanded;
-
-        // Adjust max height for animation
-        if (!isExpanded) {
-          panel.style.maxHeight = panel.scrollHeight + 'px';
-        } else {
-          panel.style.maxHeight = null; // Reset to allow collapsing animation
-        }
-
-        // Update indicator
-        button.querySelector('.collapsible-indicator').textContent = isExpanded ? '▸' : '▾';
-      });
-    });
-
-    // Initial state setup for indicators
-    document.querySelectorAll('.collapsible-toggle').forEach(function (button) {
-      if (button.getAttribute('aria-expanded') === 'true') {
-        button.querySelector('.collapsible-indicator').textContent = '▾';
-      } else {
-        button.querySelector('.collapsible-indicator').textContent = '▸';
-      }
-    });
-  });
-</script>
