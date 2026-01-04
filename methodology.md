@@ -26,7 +26,7 @@ Our system employs a hybrid approach, combining automated analysis with real-tim
 | **4. Live Cross-Referencing** | For each extracted claim, the system performs real-time searches using DuckDuckGo. It looks for both supporting evidence (confirmations, true, evidence) and challenging evidence (false, hoax, debunked) from various online sources.                                                                                                                                                                                                                     | `duckduckgo_search` API for real-time search queries.                                                                                                    |
 | **5. Verdict Generation**| Combines the AI generation probability score with the findings from the cross-referencing stage. The "Overall Verdict" is a weighted assessment, considering whether the claim is likely true, false, misleading, or if there's insufficient evidence. This logic is inspired by IFCN rating guidelines. | Weighted logic combining AI probability (`ai_score`) and claim verification results (`support_count`, `challenge_count`).                             |
 
-[View Architecture Diagram](/realaicheck.github.io/blob/main/diagram.md)
+[View Architecture Diagram](/diagram.md)
 
 
 ---
