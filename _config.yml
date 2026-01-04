@@ -10,6 +10,8 @@ round-avatar: false
 
 site-css:
   - "/assets/css/custom.css"
+ 
+common-js:  - "/assets/js/mermaid.min.js"  
 
 footer-extra: /_includes/footer-custom.html   # Note: no quotes needed
 
