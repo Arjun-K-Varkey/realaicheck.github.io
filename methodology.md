@@ -4,16 +4,6 @@ title: Methodology
 mermaid: true # This variable might be used by some themes, but we'll use the script tag directly for robustness
 ---
 
-<!-- Add this script to ensure Mermaid diagrams are rendered in the browser -->
-<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-<script>
-  mermaid.initialize({
-    startOnLoad: true,
-    theme: 'default', // Or 'dark', 'forest', 'neutral'
-    // You can add more configuration options here if needed
-  });
-</script>
-
 RealAI Check is designed to help you navigate the complexities of AI-generated content and misinformation. We operate with a commitment to transparency, accuracy, and user understanding, inspired by the principles of the International Fact-Checking Network (IFCN).
 
 ### Our Commitments
@@ -36,7 +26,7 @@ Our system employs a hybrid approach, combining automated analysis with real-tim
 | **4. Live Cross-Referencing** | For each extracted claim, the system performs real-time searches using DuckDuckGo. It looks for both supporting evidence (confirmations, true, evidence) and challenging evidence (false, hoax, debunked) from various online sources.                                                                                                                                                                                                                     | `duckduckgo_search` API for real-time search queries.                                                                                                    |
 | **5. Verdict Generation**| Combines the AI generation probability score with the findings from the cross-referencing stage. The "Overall Verdict" is a weighted assessment, considering whether the claim is likely true, false, misleading, or if there's insufficient evidence. This logic is inspired by IFCN rating guidelines. | Weighted logic combining AI probability (`ai_score`) and claim verification results (`support_count`, `challenge_count`).                             |
 
-<pre class="mermaid">
+```mermaid
 graph TD
     A[User Submits URL] --> B{Frontend (submit.md)};
     B --> C[API Request];
@@ -63,7 +53,7 @@ graph TD
         K
         L
     end
-</pre>
+```
 
 ---
 
