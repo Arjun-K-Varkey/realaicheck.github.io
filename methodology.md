@@ -28,7 +28,7 @@ Our system employs a hybrid approach, combining automated analysis with real-tim
 
 ```mermaid
 graph TD
-    A[User Submits URL] --> B{Frontend (submit.md)};
+    A[User Submits URL] --> B{Frontend};
     B --> C[API Request];
     C --> D[Backend Endpoint $$e.g., Render$$\];
     D --> E{Content Fetching};
