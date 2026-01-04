@@ -26,57 +26,8 @@ Our system employs a hybrid approach, combining automated analysis with real-tim
 | **4. Live Cross-Referencing** | For each extracted claim, the system performs real-time searches using DuckDuckGo. It looks for both supporting evidence (confirmations, true, evidence) and challenging evidence (false, hoax, debunked) from various online sources.                                                                                                                                                                                                                     | `duckduckgo_search` API for real-time search queries.                                                                                                    |
 | **5. Verdict Generation**| Combines the AI generation probability score with the findings from the cross-referencing stage. The "Overall Verdict" is a weighted assessment, considering whether the claim is likely true, false, misleading, or if there's insufficient evidence. This logic is inspired by IFCN rating guidelines. | Weighted logic combining AI probability (`ai_score`) and claim verification results (`support_count`, `challenge_count`).                             |
 
-```mermaid
-graph TD
-    %% Define styles
-    classDef frontend fill:#f9f,stroke:#333,stroke-width:2px;
-    classDef backend fill:#ccf,stroke:#333,stroke-width:2px;
-    classDef api fill:#cfc,stroke:#333,stroke-width:2px;
-    classDef ai fill:#ff9,stroke:#333,stroke-width:2px;
-    classDef nlp fill:#fcc,stroke:#333,stroke-width:2px;
-    classDef crossref fill:#cff,stroke:#333,stroke-width:2px;
+[View Detailed Diagram](/diagram.md)
 
-    %% Nodes
-    A[User Submits URL] --> B{Frontend};
-    B --> C[API Request];
-    C --> D[Backend Endpoint $$e.g., Render$$];
-    D --> E{Content Fetching};
-    E --> F[AI Detection $$Hugging Face$$];
-    F --> G{Claim Extraction $$NLP$$};
-    G --> H{Live Cross-Referencing $$DuckDuckGo$$};
-    H --> I{Verdict Generation};
-    I --> J[Response to Frontend];
-    J --> K{Display Results};
-    K --> L[User Sees Analysis];
-
-    %% Apply styles to nodes
-    class B frontend;
-    class C api;
-    class D backend;
-    class E backend;
-    class F ai;
-    class G nlp;
-    class H crossref;
-    class I backend;
-    class J api;
-    class K frontend;
-    class L frontend;
-
-    %% Subgraphs
-    subgraph Backend Processing
-        E
-        F
-        G
-        H
-        I
-    end
-
-    subgraph Frontend
-        B
-        K
-        L
-    end
-```
 
 ---
 
