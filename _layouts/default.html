@@ -23,3 +23,14 @@ layout: base
     </div>
   {% endif %}
 </main>
+
+<!-- Include Mermaid.js -->
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>
+  // Initialize Mermaid
+  if (typeof mermaid !== 'undefined') {
+    mermaid.initialize({ startOnLoad: true, theme: 'default' });
+  } else {
+    console.warn('Mermaid script failed to load.');
+  }
+</script>
