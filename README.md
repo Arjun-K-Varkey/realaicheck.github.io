@@ -1,7 +1,6 @@
 # RealAI Check 🚀
 
 [![GitHub stars](https://img.shields.io/github/stars/Arjun-K-Varkey/realaicheck.github.io)](https://github.com/Arjun-K-Varkey/realaicheck.github.io)
-[![GitHub license](https://img.shields.io/github/license/Arjun-K-Varkey/realaicheck.github.io)][![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue)](https://www.python.org/downloads/)
 [![Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://realaicheck.github.io)
 
