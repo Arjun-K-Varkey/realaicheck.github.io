@@ -28,11 +28,11 @@ Our system employs a hybrid approach, combining automated analysis with real-tim
 
 ```mermaid
 graph TD
-    A[User Submits URL] --> B{Frontend};
+    A[User Submits URL] --> B{Frontend (submit.md)};
     B --> C[API Request];
     C --> D[Backend Endpoint $$e.g., Render$$\];
     D --> E{Content Fetching};
-    E --> F{AI Detection (Hugging Face)};
+    E --> F[AI Detection $$Hugging Face$$\];
     F --> G{Claim Extraction (NLP)};
     G --> H{Live Cross-Referencing (DuckDuckGo)};
     H --> I{Verdict Generation};
