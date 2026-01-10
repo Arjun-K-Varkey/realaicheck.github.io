@@ -43,7 +43,7 @@ async def root():
     Root endpoint to confirm API is running and CORS is enabled.
     """
     return {
-        "message": "RealAI Check API is live! 🚀 POST to /analyze with {'url': 'https://example.com'}",
+        "message": "RealAI Check API is live! 🚀 POST to /analyze with {'url': 'https://arjun-k-varkey.github.io/realaicheck.github.io'}",
         "status": "healthy",
         "cors": "✅ Enabled - your GitHub.io site can now connect"
     }
